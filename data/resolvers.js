@@ -1,11 +1,3 @@
-const { withFilter } = require("apollo-server");
-const channels = require("./data");
-
-let nextId = 3;
-let nextMessageId = 5;
-
-const CHANNEL_ADDED = "CHANNEL_ADDED";
-
 const base = () => ({
   id: Math.random() + "-hola",
   name: "A name",
